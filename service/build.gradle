@@ -1,7 +1,14 @@
 apply plugin: 'java'
 
+repositories {
+    mavenCentral()
+}
+
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile group: 'org.json', name: 'json', version: '20160810'
+//    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.2'
+//    compile group: 'org.apache.httpcomponents' , name: 'httpclient-android' , version: '4.3.5.1'
 }
 
 sourceCompatibility = "1.7"
