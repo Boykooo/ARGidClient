@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Client</string>
+    <string name="app_name">ARGid</string>
+    <string name="TestButton">Test</string>
 </resources>
