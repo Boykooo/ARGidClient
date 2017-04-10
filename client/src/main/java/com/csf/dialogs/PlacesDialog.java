@@ -15,10 +15,6 @@ import java.util.List;
 
 import dto.PlaceDto;
 
-/**
- * Created by Andrey on 10.04.2017.
- */
-
 public class PlacesDialog extends DialogFragment {
 
     public static PlacesDialog newInstanse(List<PlaceDto> places){
@@ -41,8 +37,7 @@ public class PlacesDialog extends DialogFragment {
         if (places != null) {
             CharSequence[] items = new CharSequence[places.size()];
             for (int i = 0; i < items.length; i++) {
-                PlaceDto dto = places.get(i);
-                items[i] = dto.getName() + "\n" + dto.getAddress() + " " + dto.getType();
+                items[i] = buildField(places.get(i));
             }
 
             builder.setTitle(R.string.titlePlacesDialog)
@@ -52,8 +47,33 @@ public class PlacesDialog extends DialogFragment {
 
                         }
                     });
-
         }
+
         return builder.create();
     }
+
+    private String buildField(PlaceDto dto){
+        StringBuilder sb = new StringBuilder();
+        sb.append("Name: ");
+        sb.append(dto.getName() + System.getProperty("line.separator"));
+        sb.append("Address: ");
+        sb.append(dto.getAddress() + System.getProperty("line.separator"));
+        sb.append("Type: ");
+        sb.append(dto.getType() + System.getProperty("line.separator"));
+
+        return sb.toString();
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
