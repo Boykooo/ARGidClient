@@ -9,6 +9,7 @@ dependencies {
     compile group: 'org.json', name: 'json', version: '20160810'
 //    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.2'
 //    compile group: 'org.apache.httpcomponents' , name: 'httpclient-android' , version: '4.3.5.1'
+    compile 'org.parceler:parceler-api:1.1.6'
 }
 
 sourceCompatibility = "1.7"

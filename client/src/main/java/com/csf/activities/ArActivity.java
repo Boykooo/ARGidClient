@@ -4,9 +4,11 @@ import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
+
+import com.csf.dialogs.PlacesDialog;
 
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 import dto.PlaceDto;
 import services.GidService;
@@ -19,34 +21,27 @@ public class ArActivity extends Activity {
 
     private GidService gidService;
 
-    private TextView textView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ar_activity);
 
-        textView = (TextView) findViewById(R.id.hello);
         this.gidService = new GidService();
     }
 
-    public void spartakButton(View view) {
-
+    public void spartakButton(View view) throws ExecutionException, InterruptedException {
+        showPlacebyCrd("51.661873", "39.204396");
     }
 
-    public void koltButton(View view) {
-
+    public void koltButton(View view) throws ExecutionException, InterruptedException {
+        showPlacebyCrd("51.661896", "39.202152");
     }
 
-    public void test(View view) throws Exception {
-        //lat=51.661896&lng=39.202152
-        String lat = "51.661896";
-        String lng = "39.202152";
-
+    private void showPlacebyCrd(String lat, String lng) throws ExecutionException, InterruptedException {
         GidServiceTask task = new GidServiceTask();
-
         List<PlaceDto> places = task.execute(lat, lng).get();
-        textView.setText(places.get(0).getName());
+
+        PlacesDialog.newInstanse(places).show(getFragmentManager(), "placesDialog");
     }
 
     private class GidServiceTask extends AsyncTask<String, String, List<PlaceDto>> {

@@ -1,5 +1,8 @@
 package dto;
 
+import org.parceler.Parcel;
+
+@Parcel
 public class PlaceDto {
 
     private String name;
@@ -19,11 +22,13 @@ public class PlaceDto {
         this.lng = lng;
     }
 
+
     //region GetSet
 
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -31,6 +36,7 @@ public class PlaceDto {
     public String getAddress() {
         return address;
     }
+
     public void setAddress(String address) {
         this.address = address;
     }
@@ -38,6 +44,7 @@ public class PlaceDto {
     public String getType() {
         return type;
     }
+
     public void setType(String type) {
         this.type = type;
     }
@@ -45,6 +52,7 @@ public class PlaceDto {
     public Double getLat() {
         return lat;
     }
+
     public void setLat(Double lat) {
         this.lat = lat;
     }
@@ -52,6 +60,7 @@ public class PlaceDto {
     public Double getLng() {
         return lng;
     }
+
     public void setLng(Double lng) {
         this.lng = lng;
     }

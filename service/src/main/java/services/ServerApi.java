@@ -18,7 +18,6 @@ public class ServerApi {
 
     public ServerApi() {
         this.baseRequest = "http://91.202.27.32:8080/web/api/places?";
-        //http://91.202.27.32:8080/web/api/places?lat=51.661896&lng=39.202152
     }
 
     public JSONArray getDataByCrd(String lat, String lng) throws Exception {
@@ -28,30 +27,12 @@ public class ServerApi {
     }
 
     private String getJsonFromUrl(String request) {
-
-        //        try {
-//
-//            HttpClient httpClient = HttpClientBuilder.create().build();
-//            HttpGet httpGet = new HttpGet(request);
-//
-//            HttpResponse httpResponse = httpClient.execute(httpGet);
-//            HttpEntity httpEntity = httpResponse.getEntity();
-//            inputStream = httpEntity.getContent();
-//        } catch (ClientProtocolException e) {
-//            e.printStackTrace();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-
         InputStream inputStream = null;
-
-
         HttpURLConnection connection = null;
         try {
             URL url = new URL(request);
             connection = (HttpURLConnection) url.openConnection();
             inputStream = connection.getInputStream();
-
 
         } catch (MalformedURLException e) {
             e.printStackTrace();
