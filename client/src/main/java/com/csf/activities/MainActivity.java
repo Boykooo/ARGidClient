@@ -100,7 +100,6 @@ public class MainActivity extends App implements GoogleApiClient.ConnectionCallb
             AlertDialog alert = builder.create();
             alert.show();
         }
-
     }
 
     @Override
