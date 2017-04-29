@@ -1,10 +1,10 @@
 package com.csf.activities;
 
-import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 
+import com.csf.base.App;
 import com.csf.dialogs.PlacesDialog;
 
 import java.util.List;
@@ -17,7 +17,7 @@ import services.GidService;
  * Created by Andrey on 09.04.2017.
  */
 
-public class ArActivity extends Activity {
+public class ArActivity extends App {
 
     private GidService gidService;
 
@@ -26,7 +26,7 @@ public class ArActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ar_activity);
 
-        this.gidService = new GidService();
+        this.gidService = GidService.getInstance();
     }
 
     public void spartakButton(View view) throws ExecutionException, InterruptedException {
