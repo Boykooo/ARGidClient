@@ -18,4 +18,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ArActivity.class);
         startActivity(intent);
     }
+
+    public void locate(View view){
+
+    }
 }

@@ -12,11 +12,11 @@
         android:layout_height="wrap_content"
         android:text="Спартак"
         android:id="@+id/spartakButton"
-        android:layout_marginStart="56dp"
+        android:layout_marginStart="136dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="56dp"
+        android:layout_marginLeft="136dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="264dp" />
+        android:layout_marginBottom="296dp" />
 
     <Button
         android:onClick="koltButton"
@@ -24,11 +24,11 @@
         android:layout_height="wrap_content"
         android:text="Кольцовский сквер"
         android:id="@+id/koltButton"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="112dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="40dp"
+        android:layout_marginRight="112dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="264dp" />
+        android:layout_marginBottom="208dp" />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -52,24 +52,3 @@ public class ArActivity extends Activity {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

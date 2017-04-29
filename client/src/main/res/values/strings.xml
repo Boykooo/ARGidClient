@@ -2,4 +2,6 @@
     <string name="app_name">ARGid</string>
     <string name="TestButton">Test</string>
     <string name="titlePlacesDialog">Найденные места</string>
+    <string name="WhereAmI">Где я?</string>
+    <string name="GoToArScreen">Поиск мест</string>
 </resources>
