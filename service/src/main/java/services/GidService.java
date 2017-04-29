@@ -15,9 +15,21 @@ import dto.PlaceDto;
 
 public class GidService {
 
+    private static GidService instance;
     private ServerApi api;
 
-    public GidService() {
+    public static GidService getInstance(){
+        if (instance != null)
+        {
+            return instance;
+        }
+        else {
+            instance = new GidService();
+            return instance;
+        }
+    }
+
+    private GidService() {
         api = new ServerApi();
     }
 
