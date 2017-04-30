@@ -4,7 +4,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 
-import com.csf.base.App;
+import com.csf.base.BaseActivity;
 import com.csf.dialogs.PlacesDialog;
 
 import java.util.List;
@@ -13,11 +13,7 @@ import java.util.concurrent.ExecutionException;
 import dto.PlaceDto;
 import services.GidService;
 
-/**
- * Created by Andrey on 09.04.2017.
- */
-
-public class ArActivity extends App {
+public class ArActivity extends BaseActivity {
 
     private GidService gidService;
 
