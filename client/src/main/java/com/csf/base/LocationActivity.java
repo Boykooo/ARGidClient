@@ -1,6 +1,7 @@
 package com.csf.base;
 
 import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -17,6 +18,7 @@ public class LocationActivity extends BaseActivity implements GoogleApiClient.Co
     protected GoogleApiClient googleApiClient;
     protected LocationRequest locationRequest;
     protected LocationListener locationListener;
+    protected LocationManager locationManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,8 @@ public class LocationActivity extends BaseActivity implements GoogleApiClient.Co
         locationRequest.setInterval(10000);
         locationRequest.setFastestInterval(5000);
         locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+
+        locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
     }
 
     @Override
