@@ -28,6 +28,17 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="json-20160810" level="project" />
+    <orderEntry type="library" exported="" name="httpclient-4.5.2" level="project" />
+    <orderEntry type="library" exported="" name="httpclient-android-4.3.5.1" level="project" />
     <orderEntry type="library" exported="" name="parceler-api-1.1.6" level="project" />
+    <orderEntry type="library" exported="" name="retrofit-2.2.0" level="project" />
+    <orderEntry type="library" exported="" name="converter-gson-2.2.0" level="project" />
+    <orderEntry type="library" exported="" name="logging-interceptor-3.2.0" level="project" />
+    <orderEntry type="library" exported="" name="httpcore-4.4.4" level="project" />
+    <orderEntry type="library" exported="" name="commons-logging-1.2" level="project" />
+    <orderEntry type="library" exported="" name="commons-codec-1.9" level="project" />
+    <orderEntry type="library" exported="" name="okhttp-3.6.0" level="project" />
+    <orderEntry type="library" exported="" name="gson-2.7" level="project" />
+    <orderEntry type="library" exported="" name="okio-1.11.0" level="project" />
   </component>
 </module>

@@ -1,19 +1,30 @@
 package dto;
 
+import com.google.gson.annotations.SerializedName;
+
 import org.parceler.Parcel;
 
 @Parcel
 public class PlaceDto {
 
+    @SerializedName("name")
     private String name;
+
+    @SerializedName("address")
     private String address;
+
+    @SerializedName("type")
     private String type;
+
+    @SerializedName("lat")
     private Double lat;
+
+    @SerializedName("lng")
     private Double lng;
 
     public PlaceDto() {
-    }
 
+    }
     public PlaceDto(String name, String address, String type, Double lat, Double lng) {
         this.name = name;
         this.address = address;
@@ -21,7 +32,6 @@ public class PlaceDto {
         this.lat = lat;
         this.lng = lng;
     }
-
 
     //region GetSet
 

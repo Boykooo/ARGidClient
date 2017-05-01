@@ -12,6 +12,8 @@ import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 
+import services.GidService;
+
 
 public class LocationActivity extends BaseActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener {
 
@@ -19,6 +21,7 @@ public class LocationActivity extends BaseActivity implements GoogleApiClient.Co
     protected LocationRequest locationRequest;
     protected LocationListener locationListener;
     protected LocationManager locationManager;
+    protected GidService gidService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +41,8 @@ public class LocationActivity extends BaseActivity implements GoogleApiClient.Co
         locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
 
         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+
+        gidService = GidService.getInstance();
     }
 
     @Override

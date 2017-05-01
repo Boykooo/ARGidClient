@@ -1,11 +1,11 @@
 package com.csf.activities;
 
-import android.os.AsyncTask;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.csf.base.BaseActivity;
 import com.csf.dialogs.PlacesDialog;
+import com.csf.utility.GidServiceTask;
 
 import java.util.List;
 import java.util.concurrent.ExecutionException;
@@ -13,7 +13,7 @@ import java.util.concurrent.ExecutionException;
 import dto.PlaceDto;
 import services.GidService;
 
-public class ArActivity extends BaseActivity {
+public class ArActivity extends Activity {
 
     private GidService gidService;
 
@@ -37,14 +37,22 @@ public class ArActivity extends BaseActivity {
         GidServiceTask task = new GidServiceTask();
         List<PlaceDto> places = task.execute(lat, lng).get();
 
-        PlacesDialog.newInstanse(places).show(getFragmentManager(), "placesDialog");
-    }
+//        List<PlaceDto> places = null;
+//        final Context context = this;
+//        GidService.getInstance().getApi().getPlaces(lat, lng).enqueue(new Callback<List<PlaceDto>>() {
+//            @Override
+//            public void onResponse(Call<List<PlaceDto>> call, Response<List<PlaceDto>> response) {
+//                PlacesDialog.newInstanse(response.body()).show(getFragmentManager(), "placesDialog");
+//            }
+//
+//            @Override
+//            public void onFailure(Call<List<PlaceDto>> call, Throwable t) {
+//                AlertManager.getBaseMessage("qwe", "Error", context);
+//            }
+//        });
 
-    private class GidServiceTask extends AsyncTask<String, String, List<PlaceDto>> {
-        @Override
-        protected List<PlaceDto> doInBackground(String... params) {
-            return gidService.getPlaces(params[0], params[1]);
-        }
+
+        PlacesDialog.newInstanse(places).show(getFragmentManager(), "placesDialog");
     }
 }
 

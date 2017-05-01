@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.2.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dd1d0d84da2cff18f741c63a9c3af7d9aa89fdd6">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.2.4_40974bf11003258ae9320d1c9d2001ca00e81f3c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\10.2.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1b95f2bf44857a158b097e9f80d5d18d69f32584">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-wearable-10.2.4_5fcc5dd531dffc1793434f6f47cd260d99c367ad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.1.1_0fc4f6a3626374db3fcce91c049d05aa608bed1b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\com.android.support-multidex-1.0.1_b1c7d7e746bef4bbb6dc52c2440c28ffd025e05b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.1_f952e99196d54e7273de30f188243df3ecb6b521.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\exploded-aar\com.android.support\palette-v7\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\com.android.support-palette-v7-24.0.0_61758b4489303775f57aab84ee3f02cd81091e9f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\gson-2.7_1e61ec2986fd267f6de093267f4420fa1a983661.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\exploded-aar\com.google.firebase\firebase-config\10.2.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c01990d0a9bbc67f4c2b9610c1170046c2e37b3e">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-config-10.2.4_ab737bdf9e5ee18b654e58f8e116a46cd3b3bb7b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\10.2.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="610ae6a6872d9718fc05e2c726758206bd367595">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-panorama-10.2.4_884eb760f87532a37e0f74189dde40c6a67d09fe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\com.android.support.constraint-constraint-layout-1.0.2_67e2054934436d49f2196ae3bc379195d7e00849.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\10.2.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6d0d5e86f5b7203834df01ed78ebfdd5cbf74d48">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-maps-10.2.4_09987df96c2d8eaad42b0d118dc55c54d08ee4af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="133838b0352650932567fdd809bcf622061c4f5e">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\instant-run-bootstrap_973367f52811e69dda035db118002174af2f5802.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.2.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d2d27edb6fbc12fdf28008cdff920e66f08cf159">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appinvite-10.2.4_ffc9f404eb92c8a9dce6d18ddcda443db4f14066.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.2.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="43df709c95f6b0501b3adbc7da992b6a69a03214">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-10.2.4_436559c42f3446e5e399ab03cedf0813dcb866b3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_80481b1a35abaaef42ba037626502cfc06e829c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\exploded-aar\com.google.firebase\firebase-appindexing\10.2.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6b8d1a53648f7ecfe9e7bf0baf9ca657c5a1ff91">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-appindexing-10.2.4_ce5bdd2a995853fa63af6078f1d9a74a88ae38e7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\10.2.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a75030f7a3f5f96a15acdab44829bed93154d09f">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-crash-10.2.4_e4a842344380fd3cd943fc87a34f760e8fe1705d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\10.2.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d72eb1ceff1b0bac4916088eb44bb93f86b1265c">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-cast-framework-10.2.4_9deb406d430aab2b46382ad3e99d0f436abcd84b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.1.1_b8c17ca2d046904a7922a86de1ecbbbdfb0de0ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\10.2.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6b8ad09b76c4ffaedf443ca54bc2418760870689">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-storage-common-10.2.4_9f5eb78e1dfb52d05a609fca6d50b83430a8c5b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.2.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9ed08fab37c3a572da1d9ed2bf2e36c8d3e2bc48">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-10.2.4_cb445061b6b54c435ea09e1168824e110d34228f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.2.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02e70fe04e0767ccfa16745b3398816d1171f0ad">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tagmanager-api-10.2.4_c5f1b266d0699caffe718711e179537fea0868dd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.2.0\41e67dba73c3347e4503761642c39d0e06ca1f2\retrofit-2.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="041e67dba73c3347e4503761642c39d0e06ca1f2">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\retrofit-2.2.0_c66bba3fd523c33e7d42843e40bc341c83e0d4a2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="C:\Users\Andrey\AndroidStudioProjects\ARGidClient\client\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.1.1_ef632f19f6498c3fc1997da6fcb20aa34140ee1e.jar" />
+    </item>
+
+</items>

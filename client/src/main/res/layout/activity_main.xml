@@ -23,6 +23,7 @@
         android:id="@+id/goToArScreenButton"
         android:layout_weight="1"
         android:layout_marginTop="50dp"
+        android:onClick="moveToArActivity"
         />
 
 </LinearLayout>

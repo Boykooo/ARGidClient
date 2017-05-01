@@ -6,9 +6,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.MessageFormat;
 
@@ -32,10 +30,9 @@ public class ServerApi {
         try {
             URL url = new URL(request);
             connection = (HttpURLConnection) url.openConnection();
+            connection.setConnectTimeout(3000);
             inputStream = connection.getInputStream();
 
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -51,8 +48,6 @@ public class ServerApi {
 
             return sb.toString();
 
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
