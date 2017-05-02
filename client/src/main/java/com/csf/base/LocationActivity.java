@@ -1,5 +1,9 @@
 package com.csf.base;
 
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
@@ -15,13 +19,16 @@ import com.google.android.gms.location.LocationServices;
 import services.GidService;
 
 
-public class LocationActivity extends BaseActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener {
+public class LocationActivity extends BaseActivity implements GoogleApiClient.ConnectionCallbacks,
+        GoogleApiClient.OnConnectionFailedListener, LocationListener{
 
     protected GoogleApiClient googleApiClient;
     protected LocationRequest locationRequest;
     protected LocationListener locationListener;
     protected LocationManager locationManager;
     protected GidService gidService;
+    protected SensorManager sensorManager;
+    protected float degree;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,8 +48,10 @@ public class LocationActivity extends BaseActivity implements GoogleApiClient.Co
         locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
 
         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+        sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
 
         gidService = GidService.getInstance();
+        degree = 0;
     }
 
     @Override
@@ -78,4 +87,6 @@ public class LocationActivity extends BaseActivity implements GoogleApiClient.Co
     public void onLocationChanged(Location location) {
 
     }
+
+
 }

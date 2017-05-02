@@ -8,12 +8,20 @@
     android:weightSum="2"
     >
 
+    <TextView
+        android:text="Degree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/degree"
+        android:layout_weight="1" />
+
     <Button
         android:text="@string/WhereAmI"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/whereAmIButton"
         android:layout_weight="1"
+        android:layout_marginTop="50dp"
         android:onClick="locate"
         />
     <Button

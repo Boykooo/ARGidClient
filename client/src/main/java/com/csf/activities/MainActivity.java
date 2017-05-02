@@ -3,9 +3,14 @@ package com.csf.activities;
 import android.app.LoaderManager;
 import android.content.Intent;
 import android.content.Loader;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.location.Location;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import com.csf.base.LocationActivity;
 import com.csf.dialogs.PlacesDialog;
@@ -18,13 +23,22 @@ import java.util.concurrent.ExecutionException;
 
 import dto.PlaceDto;
 
-public class MainActivity extends LocationActivity implements LoaderManager.LoaderCallbacks<List<PlaceDto>> {
+public class MainActivity extends LocationActivity implements LoaderManager.LoaderCallbacks<List<PlaceDto>>, SensorEventListener {
+
+    private TextView degreeText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        degreeText = (TextView) findViewById(R.id.degree);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        sensorManager.registerListener(this, sensorManager.getDefaultSensor(Sensor.TYPE_ORIENTATION),SensorManager.SENSOR_DELAY_GAME);
     }
 
     public void moveToArActivity(View view) {
@@ -49,7 +63,6 @@ public class MainActivity extends LocationActivity implements LoaderManager.Load
 
 
             //final Context context = this;
-
 //            gidService.getApi().getPlaces(lat, lng).enqueue(new Callback<List<PlaceDto>>() {
 //                @Override
 //                public void onResponse(Call<List<PlaceDto>> call, Response<List<PlaceDto>> response) {
@@ -82,6 +95,16 @@ public class MainActivity extends LocationActivity implements LoaderManager.Load
     @Override
     public void onLoaderReset(Loader<List<PlaceDto>> loader) {
 
+    }
+
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+        this.degree = event.values[0];
+        degreeText.setText(String.valueOf(degree));
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
     }
 
 }
