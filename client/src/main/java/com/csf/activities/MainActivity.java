@@ -94,7 +94,6 @@ public class MainActivity extends LocationActivity implements LoaderManager.Load
 
     @Override
     public void onLoaderReset(Loader<List<PlaceDto>> loader) {
-
     }
 
     @Override
