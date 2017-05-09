@@ -17,7 +17,7 @@ import dto.PlaceDto;
 
 public class PlacesDialog extends DialogFragment {
 
-    public static PlacesDialog newInstanse(List<PlaceDto> places){
+    public static PlacesDialog newInstance(List<PlaceDto> places){
         PlacesDialog dialog = new PlacesDialog();
 
         Bundle args = new Bundle();

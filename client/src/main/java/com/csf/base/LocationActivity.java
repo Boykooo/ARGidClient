@@ -30,7 +30,7 @@ public class LocationActivity extends BaseActivity implements GoogleApiClient.Co
     protected LocationManager locationManager;
     protected GidService gidService;
     protected SensorManager sensorManager;
-    protected float degree;
+    protected float azimuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +53,7 @@ public class LocationActivity extends BaseActivity implements GoogleApiClient.Co
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
 
         gidService = GidService.getInstance();
-        degree = 0;
+        azimuth = 0;
     }
 
     @Override
@@ -87,12 +87,12 @@ public class LocationActivity extends BaseActivity implements GoogleApiClient.Co
 
     }
 
-    //endregion
-
     @Override
     public void onLocationChanged(Location location) {
 
     }
+
+    //endregion
 
     //region Loader implementation
 

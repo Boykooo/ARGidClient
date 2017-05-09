@@ -1,4 +1,4 @@
-package com.csf.taskLoaders;
+package com.csf.loaders;
 
 import android.os.AsyncTask;
 

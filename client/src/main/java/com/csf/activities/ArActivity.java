@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.csf.dialogs.PlacesDialog;
-import com.csf.taskLoaders.GidCrdTask;
+import com.csf.loaders.GidCrdTask;
 
 import java.util.List;
 import java.util.concurrent.ExecutionException;
@@ -42,7 +42,7 @@ public class ArActivity extends Activity {
 //        GidService.getInstance().getApi().getPlaces(lat, lng).enqueue(new Callback<List<PlaceDto>>() {
 //            @Override
 //            public void onResponse(Call<List<PlaceDto>> call, Response<List<PlaceDto>> response) {
-//                PlacesDialog.newInstanse(response.body()).show(getFragmentManager(), "placesDialog");
+//                PlacesDialog.newInstance(response.body()).show(getFragmentManager(), "placesDialog");
 //            }
 //
 //            @Override
@@ -52,7 +52,7 @@ public class ArActivity extends Activity {
 //        });
 
 
-        PlacesDialog.newInstanse(places).show(getFragmentManager(), "placesDialog");
+        PlacesDialog.newInstance(places).show(getFragmentManager(), "placesDialog");
     }
 }
 
