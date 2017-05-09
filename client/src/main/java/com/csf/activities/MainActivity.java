@@ -15,7 +15,7 @@ import android.widget.TextView;
 import com.csf.base.LocationActivity;
 import com.csf.dialogs.PlacesDialog;
 import com.csf.utility.AlertManager;
-import com.csf.utility.GidServiceTask;
+import com.csf.taskLoaders.GidCrdTask;
 import com.google.android.gms.location.LocationServices;
 
 import java.util.List;
@@ -57,7 +57,7 @@ public class MainActivity extends LocationActivity implements LoaderManager.Load
             bundle.putString("lat", lat);
             bundle.putString("lng", lng);
 
-            GidServiceTask task = new GidServiceTask();
+            GidCrdTask task = new GidCrdTask();
             List<PlaceDto> places = task.execute(lat, lng).get();
             PlacesDialog.newInstanse(places).show(getFragmentManager(), "placesDialog");
 

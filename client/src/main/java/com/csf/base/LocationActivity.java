@@ -1,14 +1,13 @@
 package com.csf.base;
 
-import android.hardware.Sensor;
-import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.app.LoaderManager;
+import android.support.v4.content.Loader;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -16,11 +15,14 @@ import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 
+import java.util.List;
+
+import dto.PlaceDto;
 import services.GidService;
 
 
 public class LocationActivity extends BaseActivity implements GoogleApiClient.ConnectionCallbacks,
-        GoogleApiClient.OnConnectionFailedListener, LocationListener{
+        GoogleApiClient.OnConnectionFailedListener, LocationListener, LoaderManager.LoaderCallbacks<List<PlaceDto>> {
 
     protected GoogleApiClient googleApiClient;
     protected LocationRequest locationRequest;
@@ -68,6 +70,8 @@ public class LocationActivity extends BaseActivity implements GoogleApiClient.Co
         }
     }
 
+    //region Connection callbacks implementation
+
     @Override
     public void onConnected(@Nullable Bundle bundle) {
         LocationServices.FusedLocationApi.requestLocationUpdates(googleApiClient, locationRequest, locationListener);
@@ -83,10 +87,29 @@ public class LocationActivity extends BaseActivity implements GoogleApiClient.Co
 
     }
 
+    //endregion
+
     @Override
     public void onLocationChanged(Location location) {
 
     }
 
+    //region Loader implementation
 
+    @Override
+    public Loader<List<PlaceDto>> onCreateLoader(int id, Bundle args) {
+        return null;
+    }
+
+    @Override
+    public void onLoadFinished(Loader<List<PlaceDto>> loader, List<PlaceDto> data) {
+
+    }
+
+    @Override
+    public void onLoaderReset(Loader<List<PlaceDto>> loader) {
+
+    }
+
+    //endregion
 }

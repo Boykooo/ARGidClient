@@ -4,13 +4,10 @@ import org.json.JSONArray;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import api.IGidApi;
 import dto.PlaceDto;
-import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 
 public class GidService {
@@ -18,6 +15,7 @@ public class GidService {
     //region Singleton implementation
 
     private static GidService instance;
+
     public static GidService getInstance(){
         if (instance != null)
         {
@@ -41,18 +39,18 @@ public class GidService {
 //        HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
 //        logging.setLevel(HttpLoggingInterceptor.Level.BODY);
 
-        OkHttpClient client = new OkHttpClient.Builder()
+//        OkHttpClient client = new OkHttpClient.Builder()
 //                .addInterceptor(logging)
-                .connectTimeout(10, TimeUnit.SECONDS)
-                .readTimeout(30,TimeUnit.SECONDS).build();
+//                .connectTimeout(10, TimeUnit.SECONDS)
+//                .readTimeout(30,TimeUnit.SECONDS).build();
+//
+//        retrofit = new Retrofit.Builder()
+//                .baseUrl("http://91.202.27.32:8080/web/api/")
+//                .addConverterFactory(GsonConverterFactory.create())
+//                .client(client)
+//                .build();
 
-        retrofit = new Retrofit.Builder()
-                .baseUrl("http://91.202.27.32:8080/web/api/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .client(client)
-                .build();
-
-        gidApi = retrofit.create(IGidApi.class);
+//        gidApi = retrofit.create(IGidApi.class);
 
         serverApi = new ServerApi();
     }
@@ -69,10 +67,29 @@ public class GidService {
 //        return null;
 
         try {
-            JSONArray main = serverApi.getDataByCrd(lat, lng);
+            JSONArray main = serverApi.getDataAboutPlace(lat, lng);
+            return parseJson(main);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
+        return null;
+    }
+
+    public List<PlaceDto> getPlaces(String lat, String lng, String azimuth){
+        try {
+            JSONArray main = serverApi.getDataAboutPlace(lat, lng, azimuth);
+            return parseJson(main);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    private List<PlaceDto> parseJson(JSONArray main){
+        try {
             if (main.length() != 0) {
-
                 List<PlaceDto> places = new ArrayList<>();
                 for (int i = 0; i < main.length(); i++) {
                     PlaceDto dto = new PlaceDto();
@@ -90,9 +107,5 @@ public class GidService {
         }
 
         return null;
-    }
-
-    public IGidApi getApi(){
-        return gidApi;
     }
 }

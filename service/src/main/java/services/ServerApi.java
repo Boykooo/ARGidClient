@@ -18,8 +18,14 @@ public class ServerApi {
         this.baseRequest = "http://91.202.27.32:8080/web/api/places?";
     }
 
-    public JSONArray getDataByCrd(String lat, String lng) throws Exception {
+    public JSONArray getDataAboutPlace(String lat, String lng) throws Exception {
         String request = MessageFormat.format(baseRequest + "lat={0}&lng={1}", lat, lng);
+
+        return new JSONArray(getJsonFromUrl(request));
+    }
+
+    public JSONArray getDataAboutPlace(String lat, String lng, String azimuth){
+        String request = MessageFormat.format(baseRequest + "lat={0}&lng={1}&azimuth={2}", lat, lng, azimuth);
 
         return new JSONArray(getJsonFromUrl(request));
     }

@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.csf.dialogs.PlacesDialog;
-import com.csf.utility.GidServiceTask;
+import com.csf.taskLoaders.GidCrdTask;
 
 import java.util.List;
 import java.util.concurrent.ExecutionException;
@@ -34,7 +34,7 @@ public class ArActivity extends Activity {
     }
 
     private void showPlacebyCrd(String lat, String lng) throws ExecutionException, InterruptedException {
-        GidServiceTask task = new GidServiceTask();
+        GidCrdTask task = new GidCrdTask();
         List<PlaceDto> places = task.execute(lat, lng).get();
 
 //        List<PlaceDto> places = null;
