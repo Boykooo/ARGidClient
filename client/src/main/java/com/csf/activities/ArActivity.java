@@ -11,18 +11,15 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 import dto.PlaceDto;
-import services.GidService;
 
 public class ArActivity extends Activity {
 
-    private GidService gidService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ar_activity);
 
-        this.gidService = GidService.getInstance();
     }
 
     public void spartakButton(View view) throws ExecutionException, InterruptedException {
@@ -36,21 +33,6 @@ public class ArActivity extends Activity {
     private void showPlacebyCrd(String lat, String lng) throws ExecutionException, InterruptedException {
         GidCrdTask task = new GidCrdTask();
         List<PlaceDto> places = task.execute(lat, lng).get();
-
-//        List<PlaceDto> places = null;
-//        final Context context = this;
-//        GidService.getInstance().getApi().getPlaces(lat, lng).enqueue(new Callback<List<PlaceDto>>() {
-//            @Override
-//            public void onResponse(Call<List<PlaceDto>> call, Response<List<PlaceDto>> response) {
-//                PlacesDialog.newInstance(response.body()).show(getFragmentManager(), "placesDialog");
-//            }
-//
-//            @Override
-//            public void onFailure(Call<List<PlaceDto>> call, Throwable t) {
-//                AlertManager.getBaseMessage("qwe", "Error", context);
-//            }
-//        });
-
 
         PlacesDialog.newInstance(places).show(getFragmentManager(), "placesDialog");
     }

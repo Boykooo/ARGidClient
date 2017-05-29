@@ -10,7 +10,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.MessageFormat;
 
-public class ServerApi {
+class ServerApi {
 
     private String baseRequest;
 
@@ -19,7 +19,7 @@ public class ServerApi {
     }
 
     public JSONArray getDataAboutPlace(String lat, String lng) throws Exception {
-        String request = MessageFormat.format(baseRequest + "lat={0}&lng={1}", lat, lng);
+        String request = MessageFormat.format("http://91.202.27.32:8080/web/api/places/static?lat={0}&lng={1}", lat, lng);
 
         return new JSONArray(getJsonFromUrl(request));
     }

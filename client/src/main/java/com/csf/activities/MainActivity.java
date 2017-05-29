@@ -24,14 +24,11 @@ import dto.PlaceDto;
 
 public class MainActivity extends LocationActivity implements SensorEventListener {
 
-    private TextView degreeText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        degreeText = (TextView) findViewById(R.id.degree);
     }
 
     @Override
@@ -76,7 +73,6 @@ public class MainActivity extends LocationActivity implements SensorEventListene
     @Override
     public void onSensorChanged(SensorEvent event) {
         this.azimuth = event.values[0];
-        degreeText.setText(String.valueOf(azimuth));
     }
 
     @Override
